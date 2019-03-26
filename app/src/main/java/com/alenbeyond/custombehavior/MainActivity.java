@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTab = (TabLayout) findViewById(R.id.tab);
-        mHeader = (LinearLayout) findViewById(R.id.header);
+//        mHeader = (LinearLayout) findViewById(R.id.header);
         mVp = (ViewPager) findViewById(R.id.vp);
         mVp.setAdapter(new MyVpAdapter(this));
         mTab.setupWithViewPager(mVp);

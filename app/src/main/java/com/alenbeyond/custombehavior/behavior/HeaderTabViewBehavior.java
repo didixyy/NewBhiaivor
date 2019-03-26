@@ -37,7 +37,7 @@ public class HeaderTabViewBehavior extends CoordinatorLayout.Behavior<View> {
         final List<View> dependencies = parent.getDependencies(child);
         final View dependency = findDependency(dependencies);
         if (dependency != null) {
-            mHeadRect.set(dependency.getLeft(), dependency.getBottom(), dependency.getRight(), dependency.getBottom() + child.getMeasuredHeight());
+            mHeadRect.set(dependency.getLeft(), parent.getMeasuredHeight()-child.getMeasuredHeight(), dependency.getRight(), parent.getMeasuredHeight());
             child.layout(mHeadRect.left, mHeadRect.top, mHeadRect.right, mHeadRect.bottom);
         }
         return true;

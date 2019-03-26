@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:id="@id/header"
         app:layout_behavior="com.alenbeyond.custombehavior.behavior.HeaderScrollBehavior"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="720dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="vertical">
@@ -20,7 +20,7 @@
             android:textColor="#fff"
             android:textSize="18sp" />
 
-    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp"
